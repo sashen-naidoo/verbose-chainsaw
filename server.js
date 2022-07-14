@@ -9,12 +9,8 @@ app.listen(80, () => {
 app.use(express.static(__dirname));
 
 app.get("/", (req, res) => {
-    res.redirect('/thispagedoesnotexist');
-});
-
-app.get("/thispagedoesnotexist", (req, res) => {
     res.sendFile(__dirname + "/index.html");
-  });
+});
 
   app.get('*', function(req, res){
     res.sendFile(__dirname + "/error.html", 404);
