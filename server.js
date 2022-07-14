@@ -15,3 +15,7 @@ app.get("/", (req, res) => {
 app.get("/thispagedoesnotexist", (req, res) => {
     res.sendFile(__dirname + "/index.html");
   });
+
+  app.get('*', function(req, res){
+    res.sendFile(__dirname + "/error.html", 404);
+  });
