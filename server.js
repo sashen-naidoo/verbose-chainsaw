@@ -9,7 +9,7 @@ app.listen(80, () => {
 app.use(express.static(__dirname));
 
 app.get("/", (req, res) => {
-    res.redirect('https://sashen.co.za/thispagedoesnotexist');
+    res.redirect('/thispagedoesnotexist');
 });
 
 app.get("/thispagedoesnotexist", (req, res) => {
