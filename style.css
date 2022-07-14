@@ -24,12 +24,12 @@ body {
   justify-content: center;
   font-family: "Nunito", serif;
   line-height: 27px;
-  font-size: 28px;
-  text-align: right;
+  font-size: 2vw;
   pointer-events: none;
   -webkit-animation: message-frames 1.5s ease 5s forwards;
           animation: message-frames 1.5s ease 5s forwards;
   font-weight: 900;
+  font-style: normal;
 }
 
 .subtext{
